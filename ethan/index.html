@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan Does – Local Services | Grants Pass, OR</title>
+  <meta name="description" content="Ethan Does – Practical local services in Grants Pass, Oregon. Details and service list coming soon.">
+  <meta name="theme-color" content="#171712">
+  <meta property="og:title" content="Ethan Does – Local Services | Grants Pass, OR">
+  <meta property="og:description" content="Practical local services from Ethan. Serving Grants Pass and surrounding areas. Details coming soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaydoes.com/ethan/">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest:       '#243D0F',
+            'forest-mid': '#3A6118',
+            'forest-lit': '#527A28',
+            yellow:       '#F4C40E',
+            'yellow-dim': '#C99D06',
+            tan:          '#BFA070',
+            earth:        '#171712',
+            'earth-mid':  '#1F1F18',
+            'earth-lit':  '#2A2A22',
+            cream:        '#F2EDD8',
+            muted:        '#9A9070',
+          },
+          fontFamily: { sans: ['"Work Sans"', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+  <style>
+    .camo-stripe {
+      background-image: repeating-linear-gradient(
+        45deg,
+        #3A6118 0px,  #3A6118 8px,
+        #2D4D10 8px,  #2D4D10 16px,
+        #4A7820 16px, #4A7820 24px,
+        #243D0F 24px, #243D0F 32px
+      );
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body class="bg-earth text-cream font-sans">
+
+  <div class="camo-stripe h-1.5 w-full" aria-hidden="true"></div>
+
+  <header>
+    <nav class="bg-earth border-b border-earth-lit sticky top-0 z-50" aria-label="Main navigation">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+        <a href="/" class="text-cream font-black text-2xl uppercase tracking-tight hover:text-yellow transition-colors duration-200 cursor-pointer">
+          J<span class="text-forest-lit">.</span>Does
+        </a>
+        <ul class="hidden md:flex items-center gap-6" role="list">
+          <li><a href="/hauling/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Hauling &amp; Rentals</a></li>
+          <li><a href="/ethan/" class="text-cream text-sm font-bold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
+          <li><a href="/jesse/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Jesse Does</a></li>
+          <li><a href="/contact/" class="bg-forest-mid hover:bg-forest-lit text-cream text-sm font-bold uppercase tracking-wider px-4 py-2 transition-colors duration-200 cursor-pointer">Contact</a></li>
+        </ul>
+        <button id="nav-toggle" class="md:hidden text-cream cursor-pointer p-2" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="icon-menu" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-earth-mid border-t border-earth-lit">
+        <ul class="flex flex-col px-4 py-3 gap-1" role="list">
+          <li><a href="/hauling/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Hauling &amp; Rentals</a></li>
+          <li><a href="/ethan/" class="block text-cream py-2.5 text-sm font-bold uppercase tracking-wider cursor-pointer">Ethan Does</a></li>
+          <li><a href="/jesse/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Jesse Does</a></li>
+          <li><a href="/contact/" class="block text-yellow py-2.5 text-sm font-bold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO / PLACEHOLDER -->
+    <section class="min-h-[70vh] flex flex-col justify-center px-6 sm:px-10 py-20 max-w-6xl mx-auto">
+      <p class="text-tan text-xs sm:text-sm font-bold uppercase tracking-[0.3em] mb-5">Ethan Does</p>
+      <h1 class="text-5xl sm:text-7xl md:text-8xl font-black uppercase leading-none tracking-tight text-cream mb-6">
+        Practical<br>local help<span class="text-forest-lit">.</span>
+      </h1>
+      <p class="text-muted text-base sm:text-lg max-w-xl mb-8 leading-relaxed">
+        Ethan Does offers practical local services in Grants Pass and surrounding areas. Service list, pricing, and availability are on the way.
+      </p>
+
+      <div class="inline-flex items-center gap-3 border border-earth-lit px-6 py-3 w-fit mb-10">
+        <div class="w-2 h-2 bg-tan rounded-full animate-pulse" aria-hidden="true"></div>
+        <span class="text-muted text-sm font-bold uppercase tracking-widest">Details Coming Soon</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="/contact/"
+           class="inline-flex items-center justify-center gap-2 bg-forest-mid hover:bg-forest-lit text-cream font-black text-sm uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer">
+          Get in Touch
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+          </svg>
+        </a>
+        <a href="/"
+           class="inline-flex items-center justify-center gap-2 border-2 border-earth-lit hover:border-tan text-muted hover:text-cream font-bold text-sm uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer">
+          View All Services
+        </a>
+      </div>
+    </section>
+
+    <!-- OTHER SERVICES TEASER -->
+    <section class="bg-earth-mid border-y border-earth-lit px-6 sm:px-10 py-14">
+      <div class="max-w-6xl mx-auto">
+        <p class="text-muted text-xs uppercase tracking-widest mb-6">While you wait &mdash; other J Does services</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+          <a href="/hauling/" class="flex items-center justify-between bg-earth border border-earth-lit hover:border-forest-mid px-5 py-4 transition-colors duration-200 cursor-pointer group">
+            <div>
+              <p class="text-cream font-bold text-sm uppercase tracking-wide">Hauling &amp; Rentals</p>
+              <p class="text-muted text-xs mt-0.5">Furniture, appliances, debris, washer/dryer rentals</p>
+            </div>
+            <svg class="w-4 h-4 text-muted group-hover:text-cream flex-shrink-0 ml-4 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+          </a>
+          <a href="/jesse/" class="flex items-center justify-between bg-earth border border-earth-lit hover:border-forest-mid px-5 py-4 transition-colors duration-200 cursor-pointer group">
+            <div>
+              <p class="text-cream font-bold text-sm uppercase tracking-wide">Jesse Does</p>
+              <p class="text-muted text-xs mt-0.5">Curb Kickin' &mdash; never miss trash day again</p>
+            </div>
+            <svg class="w-4 h-4 text-muted group-hover:text-cream flex-shrink-0 ml-4 transition-colors duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-earth-mid border-t border-earth-lit px-6 sm:px-10 py-12">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+        <div>
+          <p class="text-cream font-black text-2xl uppercase tracking-tight mb-2">J<span class="text-forest-lit">.</span>Does</p>
+          <p class="text-muted text-xs leading-relaxed max-w-[20ch]">Local services in Grants Pass, Oregon. Family-run. Practical. Affordable.</p>
+        </div>
+        <div>
+          <p class="text-cream font-bold text-xs uppercase tracking-widest mb-4">Services</p>
+          <ul class="flex flex-col gap-2" role="list">
+            <li><a href="/hauling/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Hauling &amp; Rentals</a></li>
+            <li><a href="/ethan/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
+            <li><a href="/jesse/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Jesse Does / Curb Kickin'</a></li>
+            <li><a href="/contact/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-cream font-bold text-xs uppercase tracking-widest mb-4">Contact</p>
+          <div class="flex flex-col gap-3">
+            <div>
+              <p class="text-muted text-xs uppercase tracking-wider mb-0.5">J Does Hauling &amp; Rentals</p>
+              <a href="tel:5414794673" class="text-yellow hover:text-cream text-sm font-semibold transition-colors duration-200 cursor-pointer">541&#8209;479&#8209;4673</a>
+            </div>
+            <div>
+              <p class="text-muted text-xs uppercase tracking-wider mb-0.5">Jesse / Curb Kickin'</p>
+              <a href="tel:5416596284" class="text-yellow hover:text-cream text-sm font-semibold transition-colors duration-200 cursor-pointer">541&#8209;659&#8209;6284</a>
+            </div>
+          </div>
+          <p class="text-muted text-xs mt-4">Grants Pass &nbsp;&bull;&nbsp; Josephine &amp; Jackson Counties, OR</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 pt-6 border-t border-earth-lit">
+        <div class="camo-stripe h-1 w-12 flex-shrink-0" aria-hidden="true"></div>
+        <p class="text-muted text-xs">&copy; <span id="yr"></span> J Does &nbsp;&mdash;&nbsp; jaydoes.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('nav-toggle');
+    const menu   = document.getElementById('mobile-menu');
+    const iMenu  = document.getElementById('icon-menu');
+    const iClose = document.getElementById('icon-close');
+    toggle.addEventListener('click', () => {
+      const nowHidden = menu.classList.toggle('hidden');
+      toggle.setAttribute('aria-expanded', String(!nowHidden));
+      iMenu.classList.toggle('hidden');
+      iClose.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
