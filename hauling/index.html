@@ -59,8 +59,9 @@
         <a href="../" class="text-cream font-black text-2xl uppercase tracking-tight hover:text-yellow transition-colors duration-200 cursor-pointer">
           J<span class="text-forest-lit">.</span>Does
         </a>
-        <ul class="hidden md:flex items-center gap-6" role="list">
-          <li><a href="../hauling/" class="text-cream text-sm font-bold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Hauling &amp; Rentals</a></li>
+        <ul class="hidden md:flex items-center gap-5" role="list">
+          <li><a href="../hauling/" class="text-cream text-sm font-bold uppercase tracking-wider cursor-pointer">Hauling</a></li>
+          <li><a href="../rentals/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Rentals</a></li>
           <li><a href="../ethan/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
           <li><a href="../jesse/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Jesse Does</a></li>
           <li><a href="../contact/" class="bg-forest-mid hover:bg-forest-lit text-cream text-sm font-bold uppercase tracking-wider px-4 py-2 transition-colors duration-200 cursor-pointer">Contact</a></li>
@@ -76,7 +77,8 @@
       </div>
       <div id="mobile-menu" class="hidden md:hidden bg-earth-mid border-t border-earth-lit">
         <ul class="flex flex-col px-4 py-3 gap-1" role="list">
-          <li><a href="../hauling/" class="block text-cream py-2.5 text-sm font-bold uppercase tracking-wider cursor-pointer">Hauling &amp; Rentals</a></li>
+          <li><a href="../hauling/" class="block text-cream py-2.5 text-sm font-bold uppercase tracking-wider cursor-pointer">Hauling</a></li>
+          <li><a href="../rentals/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Rentals</a></li>
           <li><a href="../ethan/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
           <li><a href="../jesse/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Jesse Does</a></li>
           <li><a href="../contact/" class="block text-yellow py-2.5 text-sm font-bold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Contact</a></li>
@@ -110,9 +112,14 @@
             Call J &mdash; 541&#8209;479&#8209;4673
           </a>
         </div>
-        <div class="flex gap-4 mt-10 lg:mt-0 lg:flex-shrink-0">
-          <img src="../wd-hanger-front.jpg" alt="J Does W/D Rentals door hanger – front" class="w-36 sm:w-44 lg:w-40 border border-earth-lit">
-          <img src="../wd-hanger-back.jpg" alt="J Does W/D Rentals door hanger – back" class="w-36 sm:w-44 lg:w-40 border border-earth-lit">
+        <!-- TODO: Replace with a hauling/truck stock photo — recommended size 600×450px -->
+        <div class="mt-10 lg:mt-0 lg:flex-shrink-0 w-full max-w-sm">
+          <div class="bg-earth-mid border border-earth-lit w-full aspect-[4/3] flex flex-col items-center justify-center gap-3 p-8">
+            <svg class="w-20 h-20 text-earth-lit" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
+            </svg>
+            <p class="text-earth-lit text-xs uppercase tracking-widest text-center">Photo Coming Soon</p>
+          </div>
         </div>
       </div>
     </section>
@@ -231,68 +238,6 @@
       </div>
     </section>
 
-    <!-- WASHER/DRYER RENTALS -->
-    <section class="px-6 sm:px-10 py-20 max-w-6xl mx-auto" aria-labelledby="rentals-heading">
-      <div class="flex items-center gap-4 mb-12">
-        <div class="w-2 h-2 bg-yellow rotate-45 flex-shrink-0" aria-hidden="true"></div>
-        <h2 id="rentals-heading" class="text-cream text-2xl sm:text-3xl font-black uppercase tracking-wide">Washer/Dryer Rentals</h2>
-        <div class="flex-1 h-px bg-earth-lit" aria-hidden="true"></div>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-        <div>
-          <p class="text-tan font-bold text-xl sm:text-2xl leading-snug mb-4">
-            Skip the laundromat.<br>Skip the purchase.<br>Skip the repairs.
-          </p>
-          <p class="text-muted text-sm sm:text-base leading-relaxed mb-8">
-            Rent or lease a washer and dryer from J Does. Affordable monthly rates. No maintenance headaches. No big upfront cost.
-          </p>
-          <a href="tel:5414794673"
-             class="inline-flex items-center gap-3 bg-forest-mid hover:bg-forest-lit text-cream font-black text-base uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
-             aria-label="Call J at 541-479-4673">
-            <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-            </svg>
-            Call for Rates &mdash; 541&#8209;479&#8209;4673
-          </a>
-        </div>
-
-        <div class="bg-earth-mid border border-earth-lit p-6 sm:p-8">
-          <p class="text-yellow font-bold text-xs uppercase tracking-widest mb-6">Why rent instead of buy?</p>
-          <ul class="flex flex-col gap-4" role="list">
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              <div>
-                <p class="text-cream text-sm font-semibold">Avoid laundromat fees &amp; wasted time</p>
-                <p class="text-muted text-xs mt-0.5">Laundry at home, on your schedule.</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              <div>
-                <p class="text-cream text-sm font-semibold">No big upfront purchase cost</p>
-                <p class="text-muted text-xs mt-0.5">Low monthly rate. No commitment to buy.</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              <div>
-                <p class="text-cream text-sm font-semibold">No maintenance or repair bills</p>
-                <p class="text-muted text-xs mt-0.5">Something breaks? That's J's problem, not yours.</p>
-              </div>
-            </li>
-            <li class="flex items-start gap-3">
-              <svg class="w-5 h-5 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              <div>
-                <p class="text-cream text-sm font-semibold">One less thing to move</p>
-                <p class="text-muted text-xs mt-0.5">When you relocate, we haul it back. Easy.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA BAR -->
     <section class="bg-forest border-y border-forest-mid px-6 sm:px-10 py-12">
       <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
@@ -323,8 +268,9 @@
         <div>
           <p class="text-cream font-bold text-xs uppercase tracking-widest mb-4">Services</p>
           <ul class="flex flex-col gap-2" role="list">
-            <li><a href="../hauling/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Hauling &amp; Rentals</a></li>
-            <li><a href="../ethan/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
+            <li><a href="../hauling/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Hauling</a></li>
+            <li><a href="../rentals/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">W/D Rentals</a></li>
+            <li><a href="../ethan/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Ethan Does / Landscape</a></li>
             <li><a href="../jesse/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Jesse Does / Curb Kickin'</a></li>
             <li><a href="../contact/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Contact</a></li>
           </ul>
