@@ -2,3 +2,10 @@
 .claude/
 Jacks_site.code-workspace
 Website Production Outline.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
