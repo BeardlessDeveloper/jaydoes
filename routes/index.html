@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curb Kickin' Routes & Availability | J Does, Grants Pass OR</title>
   <meta name="description" content="See which Curb Kickin' trash-can routes are active and which are on the waitlist, with pricing by area. Is your street covered? Check the list and call Jesse at 541-659-6284.">
-  <meta name="theme-color" content="#171712">
+  <meta name="theme-color" content="#2E5016">
   <meta property="og:title" content="Curb Kickin' Routes & Availability | Grants Pass, OR">
   <meta property="og:description" content="Find your neighborhood. See active routes, join a waitlist, and check pricing by area for Jesse's Curb Kickin' trash-can service.">
   <meta property="og:type" content="website">
@@ -15,300 +15,171 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            forest:       '#243D0F',
-            'forest-mid': '#3A6118',
-            'forest-lit': '#527A28',
-            yellow:       '#F4C40E',
-            'yellow-dim': '#C99D06',
-            tan:          '#BFA070',
-            earth:        '#171712',
-            'earth-mid':  '#1F1F18',
-            'earth-lit':  '#2A2A22',
-            cream:        '#F2EDD8',
-            muted:        '#9A9070',
-          },
-          fontFamily: { sans: ['"Work Sans"', 'sans-serif'] },
-        }
-      }
-    }
+    tailwind.config = { theme: { extend: {
+      colors: { paper:'#F6F2E6', card:'#FFFFFF', ink:'#1C2912', inkmute:'#5F6450',
+        forest:'#2E5016', 'forest-mid':'#3C691D', 'forest-lit':'#4E8526',
+        gold:'#A9780A', yellow:'#F4C40E', 'yellow-dim':'#C99D06', line:'#E4DCC6' },
+      fontFamily:{ sans:['"Work Sans"','sans-serif'] } } } }
   </script>
   <style>
-    .camo-stripe {
-      background-image: repeating-linear-gradient(
-        45deg,
-        #3A6118 0px,  #3A6118 8px,
-        #2D4D10 8px,  #2D4D10 16px,
-        #4A7820 16px, #4A7820 24px,
-        #243D0F 24px, #243D0F 32px
-      );
-    }
-    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+    .camo-stripe{background-image:repeating-linear-gradient(45deg,#3A6118 0,#3A6118 8px,#2D4D10 8px,#2D4D10 16px,#4A7820 16px,#4A7820 24px,#243D0F 24px,#243D0F 32px);}
+    @media (prefers-reduced-motion: reduce){*{transition:none !important;}}
   </style>
 </head>
-<body class="bg-earth text-cream font-sans">
+<body class="bg-paper text-ink font-sans">
 
   <div class="camo-stripe h-1.5 w-full" aria-hidden="true"></div>
 
   <header>
-    <nav class="bg-earth border-b border-earth-lit sticky top-0 z-50" aria-label="Main navigation">
+    <nav class="bg-paper/95 backdrop-blur border-b border-line sticky top-0 z-50" aria-label="Main navigation">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-        <a href="../" class="text-cream font-black text-2xl uppercase tracking-tight hover:text-yellow transition-colors duration-200 cursor-pointer">
-          J<span class="text-forest-lit">.</span>Does
-        </a>
+        <a href="../" class="text-ink font-black text-2xl uppercase tracking-tight hover:text-forest transition-colors duration-200">J<span class="text-forest-lit">.</span>Does</a>
         <ul class="hidden md:flex items-center gap-5" role="list">
-          <li><a href="../hauling/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Hauling</a></li>
-          <li><a href="../rentals/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Rentals</a></li>
-          <li><a href="../ethan/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
-          <li><a href="../jesse/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Jesse Does</a></li>
-          <li><a href="../routes/" class="text-cream text-sm font-bold uppercase tracking-wider cursor-pointer">Routes</a></li>
-          <li><a href="../contact/" class="bg-forest-mid hover:bg-forest-lit text-cream text-sm font-bold uppercase tracking-wider px-4 py-2 transition-colors duration-200 cursor-pointer">Contact</a></li>
+          <li><a href="../hauling/" class="text-inkmute hover:text-ink text-sm font-semibold uppercase tracking-wider transition-colors duration-200">Hauling</a></li>
+          <li><a href="../rentals/" class="text-inkmute hover:text-ink text-sm font-semibold uppercase tracking-wider transition-colors duration-200">Rentals</a></li>
+          <li><a href="../ethan/" class="text-inkmute hover:text-ink text-sm font-semibold uppercase tracking-wider transition-colors duration-200">Ethan Does</a></li>
+          <li><a href="../jesse/" class="text-inkmute hover:text-ink text-sm font-semibold uppercase tracking-wider transition-colors duration-200">Jesse Does</a></li>
+          <li><a href="../routes/" class="text-ink text-sm font-bold uppercase tracking-wider">Routes</a></li>
+          <li><a href="../contact/" class="bg-forest hover:bg-forest-mid text-white text-sm font-bold uppercase tracking-wider px-4 py-2 transition-colors duration-200">Contact</a></li>
         </ul>
-        <button id="nav-toggle" class="md:hidden text-cream cursor-pointer p-2" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
-          <svg id="icon-menu" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
+        <button id="nav-toggle" class="md:hidden text-ink p-2" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="icon-menu" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
       </div>
-      <div id="mobile-menu" class="hidden md:hidden bg-earth-mid border-t border-earth-lit">
+      <div id="mobile-menu" class="hidden md:hidden bg-card border-t border-line">
         <ul class="flex flex-col px-4 py-3 gap-1" role="list">
-          <li><a href="../hauling/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Hauling</a></li>
-          <li><a href="../rentals/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Rentals</a></li>
-          <li><a href="../ethan/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
-          <li><a href="../jesse/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Jesse Does</a></li>
-          <li><a href="../routes/" class="block text-cream py-2.5 text-sm font-bold uppercase tracking-wider cursor-pointer">Routes</a></li>
-          <li><a href="../contact/" class="block text-yellow py-2.5 text-sm font-bold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Contact</a></li>
+          <li><a href="../hauling/" class="block text-inkmute hover:text-ink py-2.5 text-sm font-semibold uppercase tracking-wider">Hauling</a></li>
+          <li><a href="../rentals/" class="block text-inkmute hover:text-ink py-2.5 text-sm font-semibold uppercase tracking-wider">Rentals</a></li>
+          <li><a href="../ethan/" class="block text-inkmute hover:text-ink py-2.5 text-sm font-semibold uppercase tracking-wider">Ethan Does</a></li>
+          <li><a href="../jesse/" class="block text-inkmute hover:text-ink py-2.5 text-sm font-semibold uppercase tracking-wider">Jesse Does</a></li>
+          <li><a href="../routes/" class="block text-ink font-bold py-2.5 text-sm uppercase tracking-wider">Routes</a></li>
+          <li><a href="../contact/" class="block text-forest font-bold py-2.5 text-sm uppercase tracking-wider">Contact</a></li>
         </ul>
       </div>
     </nav>
+    <div class="bg-forest text-white/90">
+      <div class="max-w-6xl mx-auto px-6 py-2.5 flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs sm:text-sm font-semibold uppercase tracking-wider">
+        <span class="text-yellow" aria-hidden="true">★★★★★</span><span>Curb Kickin' by Jesse</span>
+        <span class="hidden sm:inline text-forest-lit" aria-hidden="true">•</span><span>Active Routes &amp; Waitlist</span>
+        <span class="hidden sm:inline text-forest-lit" aria-hidden="true">•</span><span>Call 541-659-6284</span>
+      </div>
+    </div>
   </header>
 
   <main>
 
     <!-- HERO -->
-    <section class="px-6 sm:px-10 py-20 max-w-6xl mx-auto border-b border-earth-lit">
-      <p class="text-yellow text-xs sm:text-sm font-bold uppercase tracking-[0.3em] mb-5">Curb Kickin' &nbsp;&bull;&nbsp; Routes &amp; Availability</p>
-      <h1 class="text-5xl sm:text-7xl md:text-8xl font-black uppercase leading-none tracking-tight text-cream mb-6">
-        Is your street<br>on the route<span class="text-yellow">?</span>
-      </h1>
-      <p class="text-cream text-base sm:text-lg max-w-2xl mb-4 leading-relaxed">
-        Curb Kickin' runs on set neighborhood routes so Jesse can keep service tight and prices low. Find your area below: if it's <span class="text-forest-lit font-bold">Active</span>, you can start this week. If it's on the <span class="text-yellow font-bold">Waitlist</span>, get your name down &mdash; routes open up as enough neighbors sign on.
+    <section class="max-w-6xl mx-auto px-6 sm:px-10 pt-12 pb-12 border-b border-line">
+      <p class="text-gold text-xs sm:text-sm font-bold uppercase tracking-[0.25em] mb-4">Curb Kickin' &bull; Routes &amp; Availability</p>
+      <h1 class="text-5xl sm:text-7xl font-black uppercase leading-[0.95] tracking-tight text-ink mb-6">Is your street<br>on the route<span class="text-yellow">?</span></h1>
+      <p class="text-inkmute text-base sm:text-lg max-w-2xl mb-4 leading-relaxed">
+        Curb Kickin' runs on set neighborhood routes so Jesse can keep service tight and prices low. Find your area below: if it's <span class="text-forest-lit font-bold">Active</span>, you can start this week. If it's on the <span class="text-gold font-bold">Waitlist</span>, get your name down &mdash; routes open up as enough neighbors sign on.
       </p>
-      <p class="text-tan font-bold text-base sm:text-lg mb-10 max-w-2xl leading-relaxed">
-        Don't see your street? Call Jesse &mdash; new routes start as soon as a few neighbors are in.
-      </p>
-      <a href="tel:5416596284"
-         class="inline-flex items-center gap-3 bg-forest-mid hover:bg-forest-lit text-cream font-black text-base sm:text-lg uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
-         aria-label="Call Jesse at 541-659-6284">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-        </svg>
-        Call Jesse &mdash; 541&#8209;659&#8209;6284
-      </a>
+      <p class="text-gold font-bold text-base sm:text-lg mb-8 max-w-2xl leading-relaxed">Don't see your street? Call Jesse &mdash; new routes start as soon as a few neighbors are in.</p>
+      <a href="tel:5416596284" class="inline-flex items-center gap-3 bg-forest hover:bg-forest-mid text-white font-black text-base sm:text-lg uppercase tracking-widest px-8 py-4 transition-colors duration-200">Call Jesse &mdash; 541&#8209;659&#8209;6284</a>
     </section>
 
-    <!-- PLACEHOLDER NOTICE: the routes and prices below are SAMPLE DATA. Replace with real
-         routes, statuses, and pricing before publishing. Keep the markup; just edit the rows. -->
-    <section class="px-6 sm:px-10 pt-16 pb-4 max-w-6xl mx-auto" aria-labelledby="routes-heading">
+    <!-- PLACEHOLDER NOTICE: routes/prices below are SAMPLE DATA. Replace with real
+         routes, statuses, and pricing before publishing. Keep markup; edit the rows. -->
+    <section class="max-w-6xl mx-auto px-6 sm:px-10 pt-16 pb-4" aria-labelledby="routes-heading">
       <div class="flex items-center gap-4 mb-6">
-        <div class="w-2 h-2 bg-yellow rotate-45 flex-shrink-0" aria-hidden="true"></div>
-        <h2 id="routes-heading" class="text-cream text-2xl sm:text-3xl font-black uppercase tracking-wide">Current Routes</h2>
-        <div class="flex-1 h-px bg-earth-lit" aria-hidden="true"></div>
+        <div class="w-2 h-2 bg-yellow rotate-45" aria-hidden="true"></div>
+        <h2 id="routes-heading" class="text-ink text-2xl sm:text-3xl font-black uppercase tracking-wide">Current Routes</h2>
+        <div class="flex-1 h-px bg-line" aria-hidden="true"></div>
       </div>
 
-      <div class="bg-earth-mid border border-yellow-dim/40 border-l-4 border-l-yellow px-5 py-4 mb-8">
-        <p class="text-tan text-sm leading-relaxed">
-          <span class="text-yellow font-bold uppercase tracking-wide">Sample list</span> &mdash; routes and rates shown here are examples. Call Jesse to confirm your street and current pricing.
-        </p>
+      <div class="bg-yellow/15 border border-yellow-dim/40 border-l-4 border-l-yellow px-5 py-4 mb-8">
+        <p class="text-ink text-sm leading-relaxed"><span class="text-gold font-bold uppercase tracking-wide">Sample list</span> &mdash; routes and rates shown here are examples. Call Jesse to confirm your street and current pricing.</p>
       </div>
 
-      <!-- Status legend -->
       <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-6">
-        <span class="inline-flex items-center gap-2 text-sm text-muted">
-          <span class="inline-block w-2.5 h-2.5 bg-forest-lit rotate-45" aria-hidden="true"></span> Active &mdash; start this week
-        </span>
-        <span class="inline-flex items-center gap-2 text-sm text-muted">
-          <span class="inline-block w-2.5 h-2.5 bg-yellow rotate-45" aria-hidden="true"></span> Waitlist &mdash; get your name down
-        </span>
+        <span class="inline-flex items-center gap-2 text-sm text-inkmute"><span class="inline-block w-2.5 h-2.5 bg-forest-lit rotate-45" aria-hidden="true"></span> Active &mdash; start this week</span>
+        <span class="inline-flex items-center gap-2 text-sm text-inkmute"><span class="inline-block w-2.5 h-2.5 bg-gold rotate-45" aria-hidden="true"></span> Waitlist &mdash; get your name down</span>
       </div>
 
-      <!-- Routes table (desktop) -->
-      <div class="hidden sm:block border border-earth-lit overflow-hidden">
+      <!-- table (desktop) -->
+      <div class="hidden sm:block border border-line overflow-hidden">
         <table class="w-full text-left border-collapse">
           <caption class="sr-only">Curb Kickin' routes, status, and monthly pricing by area</caption>
           <thead>
-            <tr class="bg-earth-lit/60">
-              <th scope="col" class="text-cream text-xs font-bold uppercase tracking-widest px-5 py-3">Route / Area</th>
-              <th scope="col" class="text-cream text-xs font-bold uppercase tracking-widest px-5 py-3">Status</th>
-              <th scope="col" class="text-cream text-xs font-bold uppercase tracking-widest px-5 py-3 text-right">Price</th>
+            <tr class="bg-card">
+              <th scope="col" class="text-ink text-xs font-bold uppercase tracking-widest px-5 py-3 border-b border-line">Route / Area</th>
+              <th scope="col" class="text-ink text-xs font-bold uppercase tracking-widest px-5 py-3 border-b border-line">Status</th>
+              <th scope="col" class="text-ink text-xs font-bold uppercase tracking-widest px-5 py-3 border-b border-line text-right">Price</th>
             </tr>
           </thead>
           <tbody>
-            <!-- SAMPLE ROW — duplicate/edit per real route -->
-            <tr class="border-t border-earth-lit">
-              <td class="text-cream text-sm font-semibold px-5 py-4">Downtown Grants Pass</td>
-              <td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-forest-lit text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-forest-lit rotate-45" aria-hidden="true"></span> Active</span></td>
-              <td class="text-tan text-sm font-semibold px-5 py-4 text-right">$25 / mo</td>
-            </tr>
-            <tr class="border-t border-earth-lit">
-              <td class="text-cream text-sm font-semibold px-5 py-4">Fruitdale</td>
-              <td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-forest-lit text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-forest-lit rotate-45" aria-hidden="true"></span> Active</span></td>
-              <td class="text-tan text-sm font-semibold px-5 py-4 text-right">$25 / mo</td>
-            </tr>
-            <tr class="border-t border-earth-lit">
-              <td class="text-cream text-sm font-semibold px-5 py-4">Redwood / Hwy 199 Corridor</td>
-              <td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-forest-lit text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-forest-lit rotate-45" aria-hidden="true"></span> Active</span></td>
-              <td class="text-tan text-sm font-semibold px-5 py-4 text-right">$30 / mo</td>
-            </tr>
-            <tr class="border-t border-earth-lit">
-              <td class="text-cream text-sm font-semibold px-5 py-4">Allen Creek / NW Grants Pass</td>
-              <td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-yellow text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-yellow rotate-45" aria-hidden="true"></span> Waitlist</span></td>
-              <td class="text-tan text-sm font-semibold px-5 py-4 text-right">$30 / mo</td>
-            </tr>
-            <tr class="border-t border-earth-lit">
-              <td class="text-cream text-sm font-semibold px-5 py-4">Merlin</td>
-              <td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-yellow text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-yellow rotate-45" aria-hidden="true"></span> Waitlist</span></td>
-              <td class="text-tan text-sm font-semibold px-5 py-4 text-right">$35 / mo</td>
-            </tr>
-            <tr class="border-t border-earth-lit">
-              <td class="text-cream text-sm font-semibold px-5 py-4">Murphy / Williams</td>
-              <td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-yellow text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-yellow rotate-45" aria-hidden="true"></span> Waitlist</span></td>
-              <td class="text-tan text-sm font-semibold px-5 py-4 text-right">$35 / mo</td>
-            </tr>
+            <tr class="bg-card border-t border-line"><td class="text-ink text-sm font-semibold px-5 py-4">Downtown Grants Pass</td><td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-forest-lit text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-forest-lit rotate-45" aria-hidden="true"></span> Active</span></td><td class="text-inkmute text-sm font-semibold px-5 py-4 text-right">$25 / mo</td></tr>
+            <tr class="bg-card border-t border-line"><td class="text-ink text-sm font-semibold px-5 py-4">Fruitdale</td><td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-forest-lit text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-forest-lit rotate-45" aria-hidden="true"></span> Active</span></td><td class="text-inkmute text-sm font-semibold px-5 py-4 text-right">$25 / mo</td></tr>
+            <tr class="bg-card border-t border-line"><td class="text-ink text-sm font-semibold px-5 py-4">Redwood / Hwy 199 Corridor</td><td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-forest-lit text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-forest-lit rotate-45" aria-hidden="true"></span> Active</span></td><td class="text-inkmute text-sm font-semibold px-5 py-4 text-right">$30 / mo</td></tr>
+            <tr class="bg-card border-t border-line"><td class="text-ink text-sm font-semibold px-5 py-4">Allen Creek / NW Grants Pass</td><td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-gold text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-gold rotate-45" aria-hidden="true"></span> Waitlist</span></td><td class="text-inkmute text-sm font-semibold px-5 py-4 text-right">$30 / mo</td></tr>
+            <tr class="bg-card border-t border-line"><td class="text-ink text-sm font-semibold px-5 py-4">Merlin</td><td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-gold text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-gold rotate-45" aria-hidden="true"></span> Waitlist</span></td><td class="text-inkmute text-sm font-semibold px-5 py-4 text-right">$35 / mo</td></tr>
+            <tr class="bg-card border-t border-line"><td class="text-ink text-sm font-semibold px-5 py-4">Murphy / Williams</td><td class="px-5 py-4"><span class="inline-flex items-center gap-2 text-gold text-xs font-bold uppercase tracking-wider"><span class="inline-block w-2 h-2 bg-gold rotate-45" aria-hidden="true"></span> Waitlist</span></td><td class="text-inkmute text-sm font-semibold px-5 py-4 text-right">$35 / mo</td></tr>
           </tbody>
         </table>
       </div>
 
-      <!-- Routes cards (mobile) -->
+      <!-- cards (mobile) -->
       <div class="sm:hidden flex flex-col gap-3">
-        <div class="bg-earth-mid border border-earth-lit p-4 flex items-center justify-between">
-          <div>
-            <p class="text-cream text-sm font-semibold">Downtown Grants Pass</p>
-            <p class="text-forest-lit text-xs font-bold uppercase tracking-wider mt-1">Active</p>
-          </div>
-          <p class="text-tan text-sm font-bold">$25 / mo</p>
-        </div>
-        <div class="bg-earth-mid border border-earth-lit p-4 flex items-center justify-between">
-          <div>
-            <p class="text-cream text-sm font-semibold">Fruitdale</p>
-            <p class="text-forest-lit text-xs font-bold uppercase tracking-wider mt-1">Active</p>
-          </div>
-          <p class="text-tan text-sm font-bold">$25 / mo</p>
-        </div>
-        <div class="bg-earth-mid border border-earth-lit p-4 flex items-center justify-between">
-          <div>
-            <p class="text-cream text-sm font-semibold">Redwood / Hwy 199 Corridor</p>
-            <p class="text-forest-lit text-xs font-bold uppercase tracking-wider mt-1">Active</p>
-          </div>
-          <p class="text-tan text-sm font-bold">$30 / mo</p>
-        </div>
-        <div class="bg-earth-mid border border-earth-lit p-4 flex items-center justify-between">
-          <div>
-            <p class="text-cream text-sm font-semibold">Allen Creek / NW Grants Pass</p>
-            <p class="text-yellow text-xs font-bold uppercase tracking-wider mt-1">Waitlist</p>
-          </div>
-          <p class="text-tan text-sm font-bold">$30 / mo</p>
-        </div>
-        <div class="bg-earth-mid border border-earth-lit p-4 flex items-center justify-between">
-          <div>
-            <p class="text-cream text-sm font-semibold">Merlin</p>
-            <p class="text-yellow text-xs font-bold uppercase tracking-wider mt-1">Waitlist</p>
-          </div>
-          <p class="text-tan text-sm font-bold">$35 / mo</p>
-        </div>
-        <div class="bg-earth-mid border border-earth-lit p-4 flex items-center justify-between">
-          <div>
-            <p class="text-cream text-sm font-semibold">Murphy / Williams</p>
-            <p class="text-yellow text-xs font-bold uppercase tracking-wider mt-1">Waitlist</p>
-          </div>
-          <p class="text-tan text-sm font-bold">$35 / mo</p>
-        </div>
+        <div class="bg-card border border-line p-4 flex items-center justify-between"><div><p class="text-ink text-sm font-semibold">Downtown Grants Pass</p><p class="text-forest-lit text-xs font-bold uppercase tracking-wider mt-1">Active</p></div><p class="text-inkmute text-sm font-bold">$25 / mo</p></div>
+        <div class="bg-card border border-line p-4 flex items-center justify-between"><div><p class="text-ink text-sm font-semibold">Fruitdale</p><p class="text-forest-lit text-xs font-bold uppercase tracking-wider mt-1">Active</p></div><p class="text-inkmute text-sm font-bold">$25 / mo</p></div>
+        <div class="bg-card border border-line p-4 flex items-center justify-between"><div><p class="text-ink text-sm font-semibold">Redwood / Hwy 199</p><p class="text-forest-lit text-xs font-bold uppercase tracking-wider mt-1">Active</p></div><p class="text-inkmute text-sm font-bold">$30 / mo</p></div>
+        <div class="bg-card border border-line p-4 flex items-center justify-between"><div><p class="text-ink text-sm font-semibold">Allen Creek / NW GP</p><p class="text-gold text-xs font-bold uppercase tracking-wider mt-1">Waitlist</p></div><p class="text-inkmute text-sm font-bold">$30 / mo</p></div>
+        <div class="bg-card border border-line p-4 flex items-center justify-between"><div><p class="text-ink text-sm font-semibold">Merlin</p><p class="text-gold text-xs font-bold uppercase tracking-wider mt-1">Waitlist</p></div><p class="text-inkmute text-sm font-bold">$35 / mo</p></div>
+        <div class="bg-card border border-line p-4 flex items-center justify-between"><div><p class="text-ink text-sm font-semibold">Murphy / Williams</p><p class="text-gold text-xs font-bold uppercase tracking-wider mt-1">Waitlist</p></div><p class="text-inkmute text-sm font-bold">$35 / mo</p></div>
       </div>
     </section>
 
     <!-- HOW THE WAITLIST WORKS -->
-    <section class="px-6 sm:px-10 py-16 max-w-6xl mx-auto">
+    <section class="max-w-6xl mx-auto px-6 sm:px-10 py-16">
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="flex flex-col items-start">
-          <span class="text-yellow font-black text-4xl leading-none mb-4">01</span>
-          <p class="text-cream font-bold text-sm uppercase tracking-wide mb-2">Find Your Area</p>
-          <p class="text-muted text-sm leading-relaxed">Check the list above. Active routes can start right away; waitlist areas just need a few more neighbors.</p>
-        </div>
-        <div class="flex flex-col items-start">
-          <span class="text-yellow font-black text-4xl leading-none mb-4">02</span>
-          <p class="text-cream font-bold text-sm uppercase tracking-wide mb-2">Call Jesse</p>
-          <p class="text-muted text-sm leading-relaxed">One quick call gets you signed up or added to the waitlist for your street. No app, no contract.</p>
-        </div>
-        <div class="flex flex-col items-start">
-          <span class="text-yellow font-black text-4xl leading-none mb-4">03</span>
-          <p class="text-cream font-bold text-sm uppercase tracking-wide mb-2">We Roll Out</p>
-          <p class="text-muted text-sm leading-relaxed">Active routes start that week. Waitlist routes open the moment enough neighbors are on board &mdash; tell yours.</p>
-        </div>
+        <div><span class="text-gold font-black text-4xl leading-none">01</span><p class="text-ink font-bold text-sm uppercase tracking-wide mt-4 mb-2">Find Your Area</p><p class="text-inkmute text-sm leading-relaxed">Check the list above. Active routes can start right away; waitlist areas just need a few more neighbors.</p></div>
+        <div><span class="text-gold font-black text-4xl leading-none">02</span><p class="text-ink font-bold text-sm uppercase tracking-wide mt-4 mb-2">Call Jesse</p><p class="text-inkmute text-sm leading-relaxed">One quick call gets you signed up or added to the waitlist for your street. No app, no contract.</p></div>
+        <div><span class="text-gold font-black text-4xl leading-none">03</span><p class="text-ink font-bold text-sm uppercase tracking-wide mt-4 mb-2">We Roll Out</p><p class="text-inkmute text-sm leading-relaxed">Active routes start that week. Waitlist routes open the moment enough neighbors are on board &mdash; tell yours.</p></div>
       </div>
     </section>
 
-    <!-- CTA BAR -->
-    <section class="bg-forest border-y border-forest-mid px-6 sm:px-10 py-12" aria-label="Contact call to action">
-      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
-        <div>
-          <p class="text-cream font-black text-xl sm:text-2xl uppercase tracking-wide">Get your street on the route.</p>
-          <p class="text-muted text-sm mt-1">Call Jesse to start service or join the waitlist. It's quick.</p>
-        </div>
-        <a href="tel:5416596284"
-           class="inline-flex items-center gap-3 bg-yellow hover:bg-yellow-dim text-earth font-black text-lg uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer flex-shrink-0"
-           aria-label="Call Jesse at 541-659-6284">
-          <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-          </svg>
-          541&#8209;659&#8209;6284
-        </a>
+    <!-- CTA -->
+    <section class="bg-yellow" aria-label="Call to action">
+      <div class="max-w-6xl mx-auto px-6 sm:px-10 py-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+        <div><p class="text-ink font-black text-2xl uppercase tracking-wide">Get your street on the route.</p><p class="text-ink/80 text-sm mt-1">Call Jesse to start service or join the waitlist. It's quick.</p></div>
+        <a href="tel:5416596284" class="inline-flex items-center gap-3 bg-forest hover:bg-forest-mid text-white font-black text-lg uppercase tracking-widest px-8 py-4 transition-colors duration-200">541&#8209;659&#8209;6284</a>
       </div>
     </section>
 
   </main>
 
-  <footer class="bg-earth-mid border-t border-earth-lit px-6 sm:px-10 py-12">
+  <footer class="bg-ink text-white/80 px-6 sm:px-10 py-12">
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
         <div>
-          <p class="text-cream font-black text-2xl uppercase tracking-tight mb-2">J<span class="text-forest-lit">.</span>Does</p>
-          <p class="text-muted text-xs leading-relaxed max-w-[20ch]">Local services in Grants Pass, Oregon. Family-run. Practical. Affordable.</p>
+          <p class="text-white font-black text-2xl uppercase tracking-tight mb-2">J<span class="text-forest-lit">.</span>Does</p>
+          <p class="text-white/60 text-xs leading-relaxed max-w-[24ch]">Local services in Grants Pass, Oregon. Family-run. Practical. Affordable.</p>
         </div>
         <div>
-          <p class="text-cream font-bold text-xs uppercase tracking-widest mb-4">Services</p>
+          <p class="text-white font-bold text-xs uppercase tracking-widest mb-4">Services</p>
           <ul class="flex flex-col gap-2" role="list">
-            <li><a href="../hauling/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Hauling</a></li>
-            <li><a href="../rentals/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">W/D Rentals</a></li>
-            <li><a href="../ethan/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
-            <li><a href="../jesse/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Jesse Does / Curb Kickin'</a></li>
-            <li><a href="../routes/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Curb Kickin' Routes</a></li>
-            <li><a href="../contact/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Contact</a></li>
+            <li><a href="../hauling/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Hauling</a></li>
+            <li><a href="../rentals/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">W/D Rentals</a></li>
+            <li><a href="../ethan/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Ethan Does</a></li>
+            <li><a href="../jesse/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Jesse Does / Curb Kickin'</a></li>
+            <li><a href="../routes/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Curb Kickin' Routes</a></li>
+            <li><a href="../contact/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Contact</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-cream font-bold text-xs uppercase tracking-widest mb-4">Contact</p>
+          <p class="text-white font-bold text-xs uppercase tracking-widest mb-4">Contact</p>
           <div class="flex flex-col gap-3">
-            <div>
-              <p class="text-muted text-xs uppercase tracking-wider mb-0.5">J Does Hauling &amp; Rentals</p>
-              <a href="tel:5414794673" class="text-yellow hover:text-cream text-sm font-semibold transition-colors duration-200 cursor-pointer">541&#8209;479&#8209;4673</a>
-            </div>
-            <div>
-              <p class="text-muted text-xs uppercase tracking-wider mb-0.5">Jesse / Curb Kickin'</p>
-              <a href="tel:5416596284" class="text-yellow hover:text-cream text-sm font-semibold transition-colors duration-200 cursor-pointer">541&#8209;659&#8209;6284</a>
-            </div>
+            <div><p class="text-white/60 text-xs uppercase tracking-wider mb-0.5">J Does Hauling &amp; Rentals</p><a href="tel:5414794673" class="text-yellow hover:text-white text-sm font-semibold transition-colors duration-200">541&#8209;479&#8209;4673</a></div>
+            <div><p class="text-white/60 text-xs uppercase tracking-wider mb-0.5">Jesse / Curb Kickin'</p><a href="tel:5416596284" class="text-yellow hover:text-white text-sm font-semibold transition-colors duration-200">541&#8209;659&#8209;6284</a></div>
           </div>
-          <p class="text-muted text-xs mt-4">Grants Pass &nbsp;&bull;&nbsp; Josephine &amp; Jackson Counties, OR</p>
+          <p class="text-white/60 text-xs mt-4">Grants Pass &bull; Josephine &amp; Jackson Counties, OR</p>
         </div>
       </div>
-      <div class="flex items-center gap-4 pt-6 border-t border-earth-lit">
+      <div class="flex items-center gap-4 pt-6 border-t border-white/15">
         <div class="camo-stripe h-1 w-12 flex-shrink-0" aria-hidden="true"></div>
-        <p class="text-muted text-xs">&copy; <span id="yr"></span> J Does &nbsp;&mdash;&nbsp; j-does.com</p>
+        <p class="text-white/60 text-xs">&copy; <span id="yr"></span> J Does &mdash; j-does.com</p>
       </div>
     </div>
   </footer>
@@ -316,14 +187,13 @@
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
     const toggle = document.getElementById('nav-toggle');
-    const menu   = document.getElementById('mobile-menu');
-    const iMenu  = document.getElementById('icon-menu');
+    const menu = document.getElementById('mobile-menu');
+    const iMenu = document.getElementById('icon-menu');
     const iClose = document.getElementById('icon-close');
     toggle.addEventListener('click', () => {
       const nowHidden = menu.classList.toggle('hidden');
       toggle.setAttribute('aria-expanded', String(!nowHidden));
-      iMenu.classList.toggle('hidden');
-      iClose.classList.toggle('hidden');
+      iMenu.classList.toggle('hidden'); iClose.classList.toggle('hidden');
     });
   </script>
 </body>

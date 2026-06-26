@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hauling, Junk & Debris Removal in Grants Pass, OR | J Does</title>
-  <meta name="description" content="If it fits in a truck, J makes it gone. Furniture, appliances, vehicles, hay, junk & whole-property cleanouts in Grants Pass, OR. You load or we load — fast, fair, free quotes. Call 541-479-4673.">
-  <meta name="theme-color" content="#171712">
+  <meta name="description" content="If it fits on the trailer, J makes it gone. Furniture, appliances, vehicles, hay, junk & whole-property cleanouts in Grants Pass, OR. You load or we load — fast, fair, free quotes. Call 541-479-4673.">
+  <meta name="theme-color" content="#2E5016">
   <meta property="og:title" content="What do you need hauled? J Does. | Grants Pass, OR">
   <meta property="og:description" content="Furniture, appliances, vehicles, debris, hay, and whole-property cleanouts. You load or we load. No job too small, and a price you'll actually say yes to.">
   <meta property="og:type" content="website">
@@ -15,343 +15,192 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            forest:       '#243D0F',
-            'forest-mid': '#3A6118',
-            'forest-lit': '#527A28',
-            yellow:       '#F4C40E',
-            'yellow-dim': '#C99D06',
-            tan:          '#BFA070',
-            earth:        '#171712',
-            'earth-mid':  '#1F1F18',
-            'earth-lit':  '#2A2A22',
-            cream:        '#F2EDD8',
-            muted:        '#9A9070',
-          },
-          fontFamily: { sans: ['"Work Sans"', 'sans-serif'] },
-        }
-      }
-    }
+    tailwind.config = { theme: { extend: {
+      colors: { paper:'#F6F2E6', card:'#FFFFFF', ink:'#1C2912', inkmute:'#5F6450',
+        forest:'#2E5016', 'forest-mid':'#3C691D', 'forest-lit':'#4E8526',
+        gold:'#A9780A', yellow:'#F4C40E', 'yellow-dim':'#C99D06', line:'#E4DCC6' },
+      fontFamily:{ sans:['"Work Sans"','sans-serif'] } } } }
   </script>
   <style>
-    .camo-stripe {
-      background-image: repeating-linear-gradient(
-        45deg,
-        #3A6118 0px,  #3A6118 8px,
-        #2D4D10 8px,  #2D4D10 16px,
-        #4A7820 16px, #4A7820 24px,
-        #243D0F 24px, #243D0F 32px
-      );
-    }
-    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+    .camo-stripe{background-image:repeating-linear-gradient(45deg,#3A6118 0,#3A6118 8px,#2D4D10 8px,#2D4D10 16px,#4A7820 16px,#4A7820 24px,#243D0F 24px,#243D0F 32px);}
+    @media (prefers-reduced-motion: reduce){*{transition:none !important;}}
   </style>
 </head>
-<body class="bg-earth text-cream font-sans">
+<body class="bg-paper text-ink font-sans">
 
   <div class="camo-stripe h-1.5 w-full" aria-hidden="true"></div>
 
   <header>
-    <nav class="bg-earth border-b border-earth-lit sticky top-0 z-50" aria-label="Main navigation">
+    <nav class="bg-paper/95 backdrop-blur border-b border-line sticky top-0 z-50" aria-label="Main navigation">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
-        <a href="../" class="text-cream font-black text-2xl uppercase tracking-tight hover:text-yellow transition-colors duration-200 cursor-pointer">
-          J<span class="text-forest-lit">.</span>Does
-        </a>
+        <a href="../" class="text-ink font-black text-2xl uppercase tracking-tight hover:text-forest transition-colors duration-200">J<span class="text-forest-lit">.</span>Does</a>
         <ul class="hidden md:flex items-center gap-5" role="list">
-          <li><a href="../hauling/" class="text-cream text-sm font-bold uppercase tracking-wider cursor-pointer">Hauling</a></li>
-          <li><a href="../rentals/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Rentals</a></li>
-          <li><a href="../ethan/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
-          <li><a href="../jesse/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Jesse Does</a></li>
-          <li><a href="../routes/" class="text-muted hover:text-cream text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Routes</a></li>
-          <li><a href="../contact/" class="bg-forest-mid hover:bg-forest-lit text-cream text-sm font-bold uppercase tracking-wider px-4 py-2 transition-colors duration-200 cursor-pointer">Contact</a></li>
+          <li><a href="../hauling/" class="text-ink text-sm font-bold uppercase tracking-wider">Hauling</a></li>
+          <li><a href="../rentals/" class="text-inkmute hover:text-ink text-sm font-semibold uppercase tracking-wider transition-colors duration-200">Rentals</a></li>
+          <li><a href="../ethan/" class="text-inkmute hover:text-ink text-sm font-semibold uppercase tracking-wider transition-colors duration-200">Ethan Does</a></li>
+          <li><a href="../jesse/" class="text-inkmute hover:text-ink text-sm font-semibold uppercase tracking-wider transition-colors duration-200">Jesse Does</a></li>
+          <li><a href="../routes/" class="text-inkmute hover:text-ink text-sm font-semibold uppercase tracking-wider transition-colors duration-200">Routes</a></li>
+          <li><a href="../contact/" class="bg-forest hover:bg-forest-mid text-white text-sm font-bold uppercase tracking-wider px-4 py-2 transition-colors duration-200">Contact</a></li>
         </ul>
-        <button id="nav-toggle" class="md:hidden text-cream cursor-pointer p-2" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
-          <svg id="icon-menu" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
+        <button id="nav-toggle" class="md:hidden text-ink p-2" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+          <svg id="icon-menu" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
       </div>
-      <div id="mobile-menu" class="hidden md:hidden bg-earth-mid border-t border-earth-lit">
+      <div id="mobile-menu" class="hidden md:hidden bg-card border-t border-line">
         <ul class="flex flex-col px-4 py-3 gap-1" role="list">
-          <li><a href="../hauling/" class="block text-cream py-2.5 text-sm font-bold uppercase tracking-wider cursor-pointer">Hauling</a></li>
-          <li><a href="../rentals/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Rentals</a></li>
-          <li><a href="../ethan/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Ethan Does</a></li>
-          <li><a href="../jesse/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Jesse Does</a></li>
-          <li><a href="../routes/" class="block text-muted hover:text-cream py-2.5 text-sm font-semibold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Routes</a></li>
-          <li><a href="../contact/" class="block text-yellow py-2.5 text-sm font-bold uppercase tracking-wider transition-colors duration-200 cursor-pointer">Contact</a></li>
+          <li><a href="../hauling/" class="block text-ink font-bold py-2.5 text-sm uppercase tracking-wider">Hauling</a></li>
+          <li><a href="../rentals/" class="block text-inkmute hover:text-ink py-2.5 text-sm font-semibold uppercase tracking-wider">Rentals</a></li>
+          <li><a href="../ethan/" class="block text-inkmute hover:text-ink py-2.5 text-sm font-semibold uppercase tracking-wider">Ethan Does</a></li>
+          <li><a href="../jesse/" class="block text-inkmute hover:text-ink py-2.5 text-sm font-semibold uppercase tracking-wider">Jesse Does</a></li>
+          <li><a href="../routes/" class="block text-inkmute hover:text-ink py-2.5 text-sm font-semibold uppercase tracking-wider">Routes</a></li>
+          <li><a href="../contact/" class="block text-forest font-bold py-2.5 text-sm uppercase tracking-wider">Contact</a></li>
         </ul>
       </div>
     </nav>
+    <div class="bg-forest text-white/90">
+      <div class="max-w-6xl mx-auto px-6 py-2.5 flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs sm:text-sm font-semibold uppercase tracking-wider">
+        <span class="text-yellow" aria-hidden="true">★★★★★</span><span>Local &amp; Family-Run</span>
+        <span class="hidden sm:inline text-forest-lit" aria-hidden="true">•</span><span>Free Quotes</span>
+        <span class="hidden sm:inline text-forest-lit" aria-hidden="true">•</span><span>You Load or We Load It</span>
+        <span class="hidden sm:inline text-forest-lit" aria-hidden="true">•</span><span>No Job Too Small</span>
+      </div>
+    </div>
   </header>
 
   <main>
 
     <!-- HERO -->
-    <section class="px-6 sm:px-10 py-20 max-w-6xl mx-auto border-b border-earth-lit">
-      <p class="text-yellow text-xs sm:text-sm font-bold uppercase tracking-[0.3em] mb-5">J Does Hauling &amp; Rentals</p>
-      <div class="flex flex-col lg:flex-row lg:items-center lg:gap-12 mb-6">
-        <h1 class="text-5xl sm:text-7xl md:text-8xl font-black uppercase leading-none tracking-tight text-cream">
-          What do you<br>need hauled<span class="text-yellow">?</span>
-        </h1>
-        <div class="mt-8 lg:mt-0 lg:flex-shrink-0 w-full max-w-sm">
-          <!-- ROTATING HERO PHOTO: slide 1 is J's real truck. Slides 2-3 are PLACEHOLDER stock (loremflickr) — swap with real job photos when available. -->
-          <div id="hero-rotator" class="relative w-full aspect-[4/3] border border-earth-lit overflow-hidden bg-earth-mid">
-            <img src="../hauling-truck.jpg" alt="Pickup truck with flatbed trailer hauling logs" class="rot-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700">
-            <img data-src="https://loremflickr.com/640/480/pickup,truck?lock=21" alt="Placeholder — hauling job photo (swap with real photo)" class="rot-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
-            <img data-src="https://loremflickr.com/640/480/moving,truck?lock=22" alt="Placeholder — hauling job photo (swap with real photo)" class="rot-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700">
-          </div>
-        </div>
+    <section class="max-w-6xl mx-auto px-6 sm:px-10 pt-12 pb-14 grid lg:grid-cols-2 gap-10 lg:gap-12 items-center border-b border-line">
+      <div>
+        <p class="text-gold text-xs sm:text-sm font-bold uppercase tracking-[0.25em] mb-4">J Does Hauling</p>
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-black uppercase leading-[0.95] tracking-tight text-ink">What do you<br>need hauled<span class="text-yellow">?</span></h1>
+        <p class="text-inkmute text-base sm:text-lg max-w-xl mt-5 mb-3 leading-relaxed">
+          Hay? Furniture? A dead appliance? A vehicle that won't move? Mid-move with no truck? Bought something too big for the car? That pile in the yard you keep walking past?
+        </p>
+        <p class="text-gold font-bold text-base sm:text-lg mb-6 max-w-xl leading-relaxed">You load, we haul &mdash; or we'll load it too. No job too small, no run-around, and a price you'll actually say yes to.</p>
+        <a href="tel:5414794673" class="inline-flex items-center gap-3 bg-forest hover:bg-forest-mid text-white font-black text-base sm:text-lg uppercase tracking-widest px-8 py-4 transition-colors duration-200">Call J &mdash; 541&#8209;479&#8209;4673</a>
       </div>
-      <p class="text-cream text-base sm:text-lg max-w-2xl mb-4 leading-relaxed">
-        Hay? Furniture? A dead appliance? A vehicle that won't move? Mid-move with no truck? Bought something too big for the car? That pile in the yard you keep walking past?
-      </p>
-      <p class="text-tan font-bold text-base sm:text-lg mb-10 max-w-2xl leading-relaxed">
-        You load, we haul &mdash; or we'll load it too. No job too small, no run-around, and a price you'll actually say yes to.
-      </p>
-      <a href="tel:5414794673"
-         class="inline-flex items-center gap-3 bg-forest-mid hover:bg-forest-lit text-cream font-black text-base sm:text-lg uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer"
-         aria-label="Call J at 541-479-4673">
-        <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-        </svg>
-        Call J &mdash; 541&#8209;479&#8209;4673
-      </a>
+      <div class="relative">
+        <div class="absolute -top-3 -left-3 w-20 h-20 bg-yellow/90" aria-hidden="true"></div>
+        <img src="../assets/img/hero-loaded.jpg" alt="J Does flatbed trailer loaded with furniture for haul-off" class="relative w-full aspect-[4/3] object-cover border-4 border-white shadow-xl">
+      </div>
     </section>
 
-    <!-- HAULING SERVICES -->
-    <section class="px-6 sm:px-10 py-20 max-w-6xl mx-auto" aria-labelledby="hauling-heading">
-      <div class="flex items-center gap-4 mb-12">
-        <div class="w-2 h-2 bg-yellow rotate-45 flex-shrink-0" aria-hidden="true"></div>
-        <h2 id="hauling-heading" class="text-cream text-2xl sm:text-3xl font-black uppercase tracking-wide">Hauling Services</h2>
-        <div class="flex-1 h-px bg-earth-lit" aria-hidden="true"></div>
+    <!-- SERVICES -->
+    <section class="max-w-6xl mx-auto px-6 sm:px-10 py-16" aria-labelledby="hauling-heading">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="w-2 h-2 bg-yellow rotate-45" aria-hidden="true"></div>
+        <h2 id="hauling-heading" class="text-ink text-2xl sm:text-3xl font-black uppercase tracking-wide">Hauling Services</h2>
+        <div class="flex-1 h-px bg-line" aria-hidden="true"></div>
       </div>
-
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-
-        <div class="bg-earth-mid border border-earth-lit p-5 flex items-start gap-4">
-          <svg class="w-6 h-6 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
-          </svg>
-          <div>
-            <p class="text-cream font-bold text-sm uppercase tracking-wide mb-1">Furniture Hauling</p>
-            <p class="text-muted text-xs leading-relaxed">Couches, tables, beds, dressers — we haul it all away.</p>
-          </div>
-        </div>
-
-        <div class="bg-earth-mid border border-earth-lit p-5 flex items-start gap-4">
-          <svg class="w-6 h-6 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5"/>
-          </svg>
-          <div>
-            <p class="text-cream font-bold text-sm uppercase tracking-wide mb-1">Appliance Hauling</p>
-            <p class="text-muted text-xs leading-relaxed">Refrigerators, stoves, washers, dryers, and more.</p>
-          </div>
-        </div>
-
-        <div class="bg-earth-mid border border-earth-lit p-5 flex items-start gap-4">
-          <svg class="w-6 h-6 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
-          </svg>
-          <div>
-            <p class="text-cream font-bold text-sm uppercase tracking-wide mb-1">Vehicle Hauling</p>
-            <p class="text-muted text-xs leading-relaxed">Cars, trucks, trailers — call to discuss your job.</p>
-          </div>
-        </div>
-
-        <div class="bg-earth-mid border border-earth-lit p-5 flex items-start gap-4">
-          <svg class="w-6 h-6 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5"/>
-          </svg>
-          <div>
-            <p class="text-cream font-bold text-sm uppercase tracking-wide mb-1">Hay Hauling</p>
-            <p class="text-muted text-xs leading-relaxed">Local hay transport — fields, barns, wherever it needs to go.</p>
-          </div>
-        </div>
-
-        <div class="bg-earth-mid border border-earth-lit p-5 flex items-start gap-4">
-          <svg class="w-6 h-6 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
-          </svg>
-          <div>
-            <p class="text-cream font-bold text-sm uppercase tracking-wide mb-1">Moving Help</p>
-            <p class="text-muted text-xs leading-relaxed">Moving boxes supplied. Local moves and haul-offs.</p>
-          </div>
-        </div>
-
-        <div class="bg-earth-mid border border-earth-lit p-5 flex items-start gap-4">
-          <svg class="w-6 h-6 text-forest-lit flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/>
-          </svg>
-          <div>
-            <p class="text-cream font-bold text-sm uppercase tracking-wide mb-1">Small Local Jobs</p>
-            <p class="text-muted text-xs leading-relaxed">Bought something without a truck? Call J — he'll haul it.</p>
-          </div>
-        </div>
-
+        <div class="bg-card border border-line p-5"><p class="text-ink font-bold text-sm uppercase tracking-wide mb-1">Furniture Hauling</p><p class="text-inkmute text-sm leading-relaxed">Couches, tables, beds, dressers &mdash; we haul it all away.</p></div>
+        <div class="bg-card border border-line p-5"><p class="text-ink font-bold text-sm uppercase tracking-wide mb-1">Appliance Hauling</p><p class="text-inkmute text-sm leading-relaxed">Refrigerators, stoves, washers, dryers, and more.</p></div>
+        <div class="bg-card border border-line p-5"><p class="text-ink font-bold text-sm uppercase tracking-wide mb-1">Vehicle &amp; Equipment</p><p class="text-inkmute text-sm leading-relaxed">Cars, trucks, ATVs, trailers &mdash; call to discuss your job.</p></div>
+        <div class="bg-card border border-line p-5"><p class="text-ink font-bold text-sm uppercase tracking-wide mb-1">Hay Hauling</p><p class="text-inkmute text-sm leading-relaxed">Local hay transport &mdash; fields, barns, wherever it needs to go.</p></div>
+        <div class="bg-card border border-line p-5"><p class="text-ink font-bold text-sm uppercase tracking-wide mb-1">Moving Help</p><p class="text-inkmute text-sm leading-relaxed">Moving boxes supplied. Local moves and haul-offs.</p></div>
+        <div class="bg-card border border-line p-5"><p class="text-ink font-bold text-sm uppercase tracking-wide mb-1">Small Local Jobs</p><p class="text-inkmute text-sm leading-relaxed">Bought something without a truck? Call J &mdash; he'll haul it.</p></div>
       </div>
     </section>
 
-    <!-- JOB GALLERY (PLACEHOLDER STOCK: swap loremflickr images with J's real job photos) -->
-    <section class="px-6 sm:px-10 pb-8 max-w-6xl mx-auto" aria-labelledby="gallery-heading">
-      <div class="flex items-center gap-4 mb-6">
-        <div class="w-2 h-2 bg-yellow rotate-45 flex-shrink-0" aria-hidden="true"></div>
-        <h2 id="gallery-heading" class="text-cream text-2xl sm:text-3xl font-black uppercase tracking-wide">Hay. Appliances. Furniture.</h2>
-        <div class="flex-1 h-px bg-earth-lit" aria-hidden="true"></div>
-      </div>
-      <p class="text-muted text-sm sm:text-base max-w-2xl mb-8 leading-relaxed">
-        If it's heavy, awkward, or in the way, it's our specialty. This is the stuff J moves every week.
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <figure class="border border-earth-lit overflow-hidden bg-earth-mid">
-          <img src="https://loremflickr.com/600/450/hay,bales?lock=31" alt="Placeholder — hay hauling (swap with real photo)" class="w-full aspect-[4/3] object-cover" loading="lazy">
-          <figcaption class="text-cream text-sm font-bold uppercase tracking-wide px-4 py-3">Hay Hauling</figcaption>
-        </figure>
-        <figure class="border border-earth-lit overflow-hidden bg-earth-mid">
-          <img src="https://loremflickr.com/600/450/refrigerator,appliance?lock=32" alt="Placeholder — appliance haul-off (swap with real photo)" class="w-full aspect-[4/3] object-cover" loading="lazy">
-          <figcaption class="text-cream text-sm font-bold uppercase tracking-wide px-4 py-3">Appliance Haul-Off</figcaption>
-        </figure>
-        <figure class="border border-earth-lit overflow-hidden bg-earth-mid">
-          <img src="https://loremflickr.com/600/450/couch,furniture?lock=33" alt="Placeholder — furniture removal (swap with real photo)" class="w-full aspect-[4/3] object-cover" loading="lazy">
-          <figcaption class="text-cream text-sm font-bold uppercase tracking-wide px-4 py-3">Furniture Removal</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ENVIRONMENTAL & CLEANUP -->
-    <section class="bg-earth-mid border-y border-earth-lit px-6 sm:px-10 py-16" aria-labelledby="cleanup-heading">
-      <div class="max-w-6xl mx-auto">
-        <div class="flex items-center gap-4 mb-10">
-          <div class="w-2 h-2 bg-forest-lit rotate-45 flex-shrink-0" aria-hidden="true"></div>
-          <h2 id="cleanup-heading" class="text-cream text-xl sm:text-2xl font-black uppercase tracking-wide">Environmental, Landscape &amp; Cleanup</h2>
-          <div class="flex-1 h-px bg-earth-lit" aria-hidden="true"></div>
+    <!-- WHAT WE HAUL GALLERY -->
+    <section class="bg-card border-y border-line" aria-labelledby="gallery-heading">
+      <div class="max-w-6xl mx-auto px-6 sm:px-10 py-16">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-2 h-2 bg-yellow rotate-45" aria-hidden="true"></div>
+          <h2 id="gallery-heading" class="text-ink text-2xl sm:text-3xl font-black uppercase tracking-wide">If It's In The Way, It's Gone</h2>
+          <div class="flex-1 h-px bg-line" aria-hidden="true"></div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
-          <ul class="flex flex-col gap-3" role="list">
-            <li class="flex items-start gap-3 text-muted text-sm">
-              <svg class="w-4 h-4 text-forest-lit mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              Yard waste &amp; debris removal
-            </li>
-            <li class="flex items-start gap-3 text-muted text-sm">
-              <svg class="w-4 h-4 text-forest-lit mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              Metal removal &amp; recycling
-            </li>
-            <li class="flex items-start gap-3 text-muted text-sm">
-              <svg class="w-4 h-4 text-forest-lit mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              Landscape haul-off &amp; maintenance debris
-            </li>
-          </ul>
-          <ul class="flex flex-col gap-3" role="list">
-            <li class="flex items-start gap-3 text-muted text-sm">
-              <svg class="w-4 h-4 text-forest-lit mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              Old furniture &amp; appliance removal
-            </li>
-            <li class="flex items-start gap-3 text-muted text-sm">
-              <svg class="w-4 h-4 text-forest-lit mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              Eco-friendly disposal &amp; recycling
-            </li>
-            <li class="flex items-start gap-3 text-muted text-sm">
-              <svg class="w-4 h-4 text-forest-lit mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              Property cleanout &amp; junk removal
-            </li>
-          </ul>
+        <p class="text-inkmute text-sm sm:text-base max-w-2xl mb-8 leading-relaxed">Heavy, awkward, or just in the way &mdash; this is the stuff J moves every week.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <figure class="border border-line overflow-hidden bg-paper">
+            <img src="../assets/img/hero-loaded.jpg" alt="Trailer loaded with furniture and household items" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <figcaption class="text-ink text-sm font-bold uppercase tracking-wide px-4 py-3">Furniture &amp; Household</figcaption>
+          </figure>
+          <figure class="border border-line overflow-hidden bg-paper">
+            <img src="../assets/img/hauling-atv.jpg" alt="ATVs loaded on the trailer" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <figcaption class="text-ink text-sm font-bold uppercase tracking-wide px-4 py-3">Vehicles &amp; Equipment</figcaption>
+          </figure>
+          <figure class="border border-line overflow-hidden bg-paper">
+            <img src="../assets/img/hauling-truck-action.jpg" alt="Dump truck hauling yard waste" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <figcaption class="text-ink text-sm font-bold uppercase tracking-wide px-4 py-3">Yard Waste &amp; Debris</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- CTA BAR -->
-    <section class="bg-forest border-y border-forest-mid px-6 sm:px-10 py-12">
-      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
-        <div>
-          <p class="text-cream font-black text-xl sm:text-2xl uppercase tracking-wide">You load, we haul.</p>
-          <p class="text-muted text-sm mt-1">Call now for a free quote &mdash; we can usually fit you in fast.</p>
-        </div>
-        <a href="tel:5414794673"
-           class="inline-flex items-center gap-3 bg-yellow hover:bg-yellow-dim text-earth font-black text-lg uppercase tracking-widest px-8 py-4 transition-colors duration-200 cursor-pointer flex-shrink-0"
-           aria-label="Call J Does at 541-479-4673">
-          <svg class="w-5 h-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-          </svg>
-          541&#8209;479&#8209;4673
-        </a>
+    <!-- ENVIRONMENTAL -->
+    <section class="max-w-6xl mx-auto px-6 sm:px-10 py-16" aria-labelledby="cleanup-heading">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="w-2 h-2 bg-forest-lit rotate-45" aria-hidden="true"></div>
+        <h2 id="cleanup-heading" class="text-ink text-xl sm:text-2xl font-black uppercase tracking-wide">Environmental, Landscape &amp; Cleanup</h2>
+        <div class="flex-1 h-px bg-line" aria-hidden="true"></div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 max-w-3xl">
+        <p class="flex items-start gap-3 text-inkmute text-sm"><span class="text-forest-lit font-bold" aria-hidden="true">✓</span> Yard waste &amp; debris removal</p>
+        <p class="flex items-start gap-3 text-inkmute text-sm"><span class="text-forest-lit font-bold" aria-hidden="true">✓</span> Old furniture &amp; appliance removal</p>
+        <p class="flex items-start gap-3 text-inkmute text-sm"><span class="text-forest-lit font-bold" aria-hidden="true">✓</span> Metal removal &amp; recycling</p>
+        <p class="flex items-start gap-3 text-inkmute text-sm"><span class="text-forest-lit font-bold" aria-hidden="true">✓</span> Eco-friendly disposal &amp; recycling</p>
+        <p class="flex items-start gap-3 text-inkmute text-sm"><span class="text-forest-lit font-bold" aria-hidden="true">✓</span> Landscape haul-off &amp; maintenance debris</p>
+        <p class="flex items-start gap-3 text-inkmute text-sm"><span class="text-forest-lit font-bold" aria-hidden="true">✓</span> Property cleanout &amp; junk removal</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-yellow" aria-label="Call to action">
+      <div class="max-w-6xl mx-auto px-6 sm:px-10 py-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+        <div><p class="text-ink font-black text-2xl uppercase tracking-wide">You load, we haul.</p><p class="text-ink/80 text-sm mt-1">Call now for a free quote &mdash; we can usually fit you in fast.</p></div>
+        <a href="tel:5414794673" class="inline-flex items-center gap-3 bg-forest hover:bg-forest-mid text-white font-black text-lg uppercase tracking-widest px-8 py-4 transition-colors duration-200">541&#8209;479&#8209;4673</a>
       </div>
     </section>
 
   </main>
 
-  <footer class="bg-earth-mid border-t border-earth-lit px-6 sm:px-10 py-12">
+  <footer class="bg-ink text-white/80 px-6 sm:px-10 py-12">
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
         <div>
-          <p class="text-cream font-black text-2xl uppercase tracking-tight mb-2">J<span class="text-forest-lit">.</span>Does</p>
-          <p class="text-muted text-xs leading-relaxed max-w-[20ch]">Local services in Grants Pass, Oregon. Family-run. Practical. Affordable.</p>
+          <p class="text-white font-black text-2xl uppercase tracking-tight mb-2">J<span class="text-forest-lit">.</span>Does</p>
+          <p class="text-white/60 text-xs leading-relaxed max-w-[24ch]">Local services in Grants Pass, Oregon. Family-run. Practical. Affordable.</p>
         </div>
         <div>
-          <p class="text-cream font-bold text-xs uppercase tracking-widest mb-4">Services</p>
+          <p class="text-white font-bold text-xs uppercase tracking-widest mb-4">Services</p>
           <ul class="flex flex-col gap-2" role="list">
-            <li><a href="../hauling/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Hauling</a></li>
-            <li><a href="../rentals/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">W/D Rentals</a></li>
-            <li><a href="../ethan/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Ethan Does / Landscape</a></li>
-            <li><a href="../jesse/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Jesse Does / Curb Kickin'</a></li>
-            <li><a href="../routes/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Curb Kickin' Routes</a></li>
-            <li><a href="../contact/" class="text-muted hover:text-cream text-sm transition-colors duration-200 cursor-pointer">Contact</a></li>
+            <li><a href="../hauling/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Hauling</a></li>
+            <li><a href="../rentals/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">W/D Rentals</a></li>
+            <li><a href="../ethan/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Ethan Does</a></li>
+            <li><a href="../jesse/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Jesse Does / Curb Kickin'</a></li>
+            <li><a href="../routes/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Curb Kickin' Routes</a></li>
+            <li><a href="../contact/" class="text-white/70 hover:text-white text-sm transition-colors duration-200">Contact</a></li>
           </ul>
         </div>
         <div>
-          <p class="text-cream font-bold text-xs uppercase tracking-widest mb-4">Contact</p>
+          <p class="text-white font-bold text-xs uppercase tracking-widest mb-4">Contact</p>
           <div class="flex flex-col gap-3">
-            <div>
-              <p class="text-muted text-xs uppercase tracking-wider mb-0.5">J Does Hauling &amp; Rentals</p>
-              <a href="tel:5414794673" class="text-yellow hover:text-cream text-sm font-semibold transition-colors duration-200 cursor-pointer">541&#8209;479&#8209;4673</a>
-            </div>
-            <div>
-              <p class="text-muted text-xs uppercase tracking-wider mb-0.5">Jesse / Curb Kickin'</p>
-              <a href="tel:5416596284" class="text-yellow hover:text-cream text-sm font-semibold transition-colors duration-200 cursor-pointer">541&#8209;659&#8209;6284</a>
-            </div>
+            <div><p class="text-white/60 text-xs uppercase tracking-wider mb-0.5">J Does Hauling &amp; Rentals</p><a href="tel:5414794673" class="text-yellow hover:text-white text-sm font-semibold transition-colors duration-200">541&#8209;479&#8209;4673</a></div>
+            <div><p class="text-white/60 text-xs uppercase tracking-wider mb-0.5">Jesse / Curb Kickin'</p><a href="tel:5416596284" class="text-yellow hover:text-white text-sm font-semibold transition-colors duration-200">541&#8209;659&#8209;6284</a></div>
           </div>
-          <p class="text-muted text-xs mt-4">Grants Pass &nbsp;&bull;&nbsp; Josephine &amp; Jackson Counties, OR</p>
+          <p class="text-white/60 text-xs mt-4">Grants Pass &bull; Josephine &amp; Jackson Counties, OR</p>
         </div>
       </div>
-      <div class="flex items-center gap-4 pt-6 border-t border-earth-lit">
+      <div class="flex items-center gap-4 pt-6 border-t border-white/15">
         <div class="camo-stripe h-1 w-12 flex-shrink-0" aria-hidden="true"></div>
-        <p class="text-muted text-xs">&copy; <span id="yr"></span> J Does &nbsp;&mdash;&nbsp; j-does.com</p>
+        <p class="text-white/60 text-xs">&copy; <span id="yr"></span> J Does &mdash; j-does.com</p>
       </div>
     </div>
   </footer>
 
   <script>
     document.getElementById('yr').textContent = new Date().getFullYear();
-
-    // Rotating hero photo — cross-fades through the slides. Skips rotation if the
-    // visitor prefers reduced motion. Stock slides load only when rotation starts.
-    (function () {
-      const rotator = document.getElementById('hero-rotator');
-      if (!rotator) return;
-      const slides = Array.from(rotator.querySelectorAll('.rot-slide'));
-      if (slides.length < 2) return;
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      slides.forEach(s => { if (s.dataset.src) s.src = s.dataset.src; });
-      let i = 0;
-      setInterval(() => {
-        slides[i].style.opacity = '0';
-        i = (i + 1) % slides.length;
-        slides[i].style.opacity = '1';
-      }, 4000);
-    })();
-
     const toggle = document.getElementById('nav-toggle');
-    const menu   = document.getElementById('mobile-menu');
-    const iMenu  = document.getElementById('icon-menu');
+    const menu = document.getElementById('mobile-menu');
+    const iMenu = document.getElementById('icon-menu');
     const iClose = document.getElementById('icon-close');
     toggle.addEventListener('click', () => {
       const nowHidden = menu.classList.toggle('hidden');
       toggle.setAttribute('aria-expanded', String(!nowHidden));
-      iMenu.classList.toggle('hidden');
-      iClose.classList.toggle('hidden');
+      iMenu.classList.toggle('hidden'); iClose.classList.toggle('hidden');
     });
   </script>
 </body>
