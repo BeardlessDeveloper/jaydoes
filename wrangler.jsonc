@@ -1,0 +1,14 @@
+{
+  // Deploys the static site to the existing Cloudflare Worker "jaydoes",
+  // which serves j-does.com / www.j-does.com (custom domains stay attached
+  // across deploys). Assets-only Worker — no server script.
+  // Deploy:  npx wrangler deploy   (requires `wrangler login` first)
+  "name": "jaydoes",
+  "compatibility_date": "2026-07-09",
+  "assets": {
+    "directory": "./"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

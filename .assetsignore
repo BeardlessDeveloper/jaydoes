@@ -1,0 +1,21 @@
+# Files NOT to upload to Cloudflare when running `wrangler deploy`.
+# Keeps the deploy to just the real site (HTML + assets/img).
+.git/
+.claude/
+node_modules/
+source-photos/
+*.pdf
+*.md
+*.code-workspace
+.gitignore
+.nojekyll
+wrangler.jsonc
+.assetsignore
+# legacy root images — the site now uses assets/img/
+/hauling-truck.jpg
+/wd-hanger-front.jpg
+/wd-hanger-back.jpg
+/curb-kickin-front.jpg
+/curb-kickin-back.jpg
+/tractor-art.jpg
+/image001.jpg
