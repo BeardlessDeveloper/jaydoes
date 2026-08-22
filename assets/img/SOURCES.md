@@ -10,10 +10,10 @@ Originals kept (uncommitted) in `/source-photos/`.
 | washer-dryer.jpg | Client (Pixabay – erikawittlieb #902359) | White washer & dryer pair in a laundry room |
 | laundry-loading.jpg | Client (Pixabay – stevepb #2668472) | Loading laundry into a front-load dryer |
 | hauling-truck-action.jpg | Client (AI-generated) | Tan J Does flatbed dump truck hauling yard waste |
-| mowing.jpg | Pexels #6728930 (placeholder) | Person mowing a green lawn |
+| mowing.jpg | Client (AI-generated) | Mowing at golden hour, J Does sticker on the mower deck |
 | trash-bins.jpg | Pexels #14008367 (placeholder) | Two green wheelie bins at a picket fence |
 
-Pexels = free, no attribution required, commercial OK. The remaining "placeholder" images
+Pexels = free, no attribution required, commercial OK. The remaining "placeholder" image (trash-bins.jpg)
 can be swapped for the client's own photos when available.
 
 `hauling-truck-action.jpg` was replaced 2026-08-22. The previous Pexels shot
