@@ -15,6 +15,11 @@ source-photos/**
 .nojekyll
 .assetsignore
 wrangler.jsonc
+# Curb Kickin' routes page — kept in the repo but NOT published.
+# Routes and pricing on it are sample data; publishing it would put fake
+# rates on a public, indexable URL. Remove these two lines to go live.
+routes
+routes/**
 # legacy root images — the site now uses assets/img/
 /hauling-truck.jpg
 /wd-hanger-front.jpg
